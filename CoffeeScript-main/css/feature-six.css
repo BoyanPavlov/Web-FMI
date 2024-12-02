@@ -1,0 +1,18 @@
+.feature-six pre {
+  border-radius: 5px;
+  background-color: #2f2625;
+
+  color: white;
+  display: inline-block;
+}
+
+.feature-six pre.coffee,
+pre.cake {
+  display: inline-block;
+  margin: 0;
+}
+
+.feature-six code {
+  display: flex;
+  flex-direction: row;
+}

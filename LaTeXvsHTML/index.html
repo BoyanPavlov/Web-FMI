@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LaTeXvsHTML</title>
+  <link href="./css/index1.css" rel="stylesheet" />
+</head>
+
+<body id="home">
+  <section class="button-container">
+    <a class="fixed-button" href="#home">Начало</a>
+  </section>
+
+  <header class="sticky-header">
+    <section class="container nav-container">
+
+      <img src="./img/html_logo2.png" alt="HTML logo" />
+      <nav>
+        <ul>
+          <li><a href="#whatIsIt">Кратко запознанство</a></li>
+          <li><a href="#whyIsIt">Защо го ползвам</a></li>
+          <li><a href="#whoIsIt">Малко повече информация</a></li>
+          <li><a href="#code">Примерен код</a></li>
+          <li><a href="#moreCode">Синтаксис</a></li>
+          <li><a href="#history">История</a></li>
+          <li><a href="#cons">Има ли недостатъци?</a></li>
+        </ul>
+      </nav>
+
+      <img src="./img/latex_logo.jpg" alt="HTML logo" />
+    </section>
+  </header>
+
+  <section id="whatIsIt" class="whatIsIt">
+    <h3>
+      В тази страница ще намерите информация за технологии наречени "LaTeX" и "HTML"
+    </h3>
+
+    <h1>Кратко запознанство</h1>
+
+    <section class="split-section">
+      <section class="introLaTeX">
+        <h2>Кратко запознанство с LaTeX</h2>
+
+        <p class="introLaTeX">
+
+          LaTeX (/ˈleɪtɛk/ LAY-tek или /ˈlɑːtɛk/ LAH-tek) е система за подготовка на документи и език за маркиране на
+          документи
+          (markup language - система за кодиране на текст, която определя структурата и форматирането на даден документ
+          и
+          евентуално връзките между неговите части). Потребителите добавят специални команди към
+          обикновен текстов файл, за да определят раздели, да правят цитати и да набират математически текстове и след
+          това
+          се
+          стартира LaTeX, за да се компилира кодът в PDF.
+
+          LaTeX не е име на конкретна програма за редактиране, а се отнася до конвенциите за кодиране или маркиране,
+          които
+          се
+          използват в документите LaTeX. Почти всяка програма за редактиране или текстообработваща програма може да се
+          използва за
+          писане на LaTeX документи, въпреки че има много програми за редактиране, написани специално, за да улеснят
+          използването
+          му.
+        </p>
+      </section>
+
+      <section class="introHTML">
+        <h2>Кратко запознанство с HTML</h2>
+
+        <p class="introHTML">
+          HTML е съкращение от HyperText Markup Language (език за маркиране на хипертекст). Това е стандартният език,
+          използван за
+          създаване и структуриране на съдържание в интернет.
+
+          HTML е език за маркиране (markup language), а не език за програмиране, което означава, че той анотира текста,
+          за
+          да
+          определи как той да бъде структуриран и показван от уеб браузърите. Той представлява градивните елементи на
+          всички
+          уебсайтове и се допълва от CSS за стилове и JavaScript за интерактивност.
+          Накратко, HTML се занимава с организиране и показване на информация на уеб страница. Можем да мислим за него
+          като
+          за
+          костите или структурата на страницата.
+        </p>
+
+      </section>
+    </section>
+
+  </section>
+
+  <section id="whyIsIt" class="whyIsIt">
+
+    <h1>Защо го ползвам</h1>
+
+    <section class="whyUseLaTeX">
+
+      <h2>Защо да използвам LaTeX?</h2>
+      <p>
+        Разделяне на съдържанието, автоматичното съдържание и дизайна: Не е необходимо да мислите за номерация на
+        страниците,
+        размери на заглавията, съдържание, фигури, таблици, тирета, акценти, избор на шрифт и разположение на фигурите.
+        За
+        всички тези неща, свързани с дизайна, които така или иначе не знаете, просто е погрижено по професионален начин.
+        Ако
+        искате да напишете писмо, започвате с „Уважаема госпожо получател...“ и дори финалното ви „С най-добри пожелания
+        В.“ ще
+        бъде автоматично попълнено от вашия предан слуга LaTeX.
+      </p>
+
+      <p>
+        Набор на формулите: Суперсет две като знак за квадрат, интеграл или сума, естествено с граници супер- и
+        субскрипт, тези
+        древногръцки букви, които все още не знаете как да произнасяте (φ и ψ, ζ и ξ, можете ли да ги различавате дори в
+        собствения си почерк?) и дроби над дроби: LaTeX съчетава всички тях не в хаос от цифри, букви и знаци, а в
+        произведение
+        на изкуството на набора (все още разбираемо само за око, обучено в тайни изкуства като диференциалното смятане и
+        алгебричната геометрия, но все пак).
+      </p>
+
+      <p>
+        На базата на текст: Няма по-отворен формат от Американския стандартен код за обмен на информация, който е в
+        основата на
+        всички (компютърно базирани) текстове, няма суров двоичен код и всичко е добре дефинирано и изводимо. Можете
+        лесно да
+        споделяте текста си, да правите сравнение на всички промени, които е направил вашият колега, и лесно да
+        забелязвате
+        корекциите на вашите коректори, да контролирате напредъка на версията, включително всички нейни предимства като
+        разклоняване, прескачане в историята, сливане.... Накратко, използвайки LaTeX, вие имате всичко, с което сме
+        свикнали и
+        което очакваме при разработването на софтуер.
+      </p>
+    </section>
+
+    <section class="whyUseHTML">
+      <h2>Защо да използвам HTML?</h2>
+      <p>
+        Ако в работата си или в ежедневието си имате някакво взаимодействие с кодове, уебсайтове или приложения, трябва
+        да
+        знаете този език. За да се убедите колко важни са HTML и технологиите, извадете смартфона си от джоба. Колко
+        приложения
+        имате? Колко често използвате браузърите? Използвате ли го за пазаруване или за извършване на покупки?
+        Контролира ли
+        неща, като например температурата в дома ви? Използвате ли го, за да резервирате хотели, полети, подстригване
+        или нещо
+        друго? Използвате ли го, за да поръчвате храна или за да слушате или гледате нещо онлайн? Всичко това се
+        основава на
+        HTML.
+      </p>
+    </section>
+  </section>
+
+
+  <section id="whoIsIt" class="whoIsIt">
+    <h1>Малко повече информация</h1>
+
+    <section class="whoIsItLaTeX">
+
+      <h2>Повече информация за LaTeX:</h2>
+
+      <p>
+        След „Какво е LaTeX?“ , вторият въпрос винаги е „Защо просто не използвате Word или Google docs?“ и разбирам
+        откъде идва
+        въпроса. Имам предвид, че пиша този скрипт в Google Doc в момента, но когато става въпрос за нещо официално като
+        публикация или нещо друго, искам да изглежда особено добре, винаги се обръщам към LaTeX. Причините за това са
+        следните:
+      </p>
+
+      <ol>
+        <li>Лична естетика - Мисля, че документите от LaTeX изглеждат по-добре.Има някакво неизразимо качество на добре
+          написания
+          текстов документ, което оценявам.</li>
+        <li>Дълготрайност - Запазването на документа като обикновен текст осигурява дълготрайност. Никога не трябва да
+          се
+          притеснявам дали документът ми е съвместим с бъдещи или минали версии на Word. Обикновеният текст и PDF
+          файловете са
+          форматите, които може да бъдете сигурни, че ще съществуват още дълго време.</li>
+        <li>
+          Математика - LaTeX е специално проектиран за създаване на красиви математически документи. Така написването на
+          математическа формула е много по-лесно, отколкото да щракате в редактор на уравнения. Освен това, тъй като
+          всичко е
+          обикновен текст, аз мога лесно да копирам и поставям уравнения.
+        </li>
+        <li>
+          Отворен код (open-source) - Удивително е, че целият този софтуер е с отворен код и безплатен за използване.
+        </li>
+      </ol>
+
+    </section>
+
+
+    <section class="whoIsItHTML">
+      <h2>Повече информация за HTML:</h2>
+      <p>
+        Предназначен е за показване и разглеждане в интернет чрез браузър, който също така помага за създаването на
+        структурата на уеб страницата. Тъй като е език за маркиране, той се състои от много тагове. Има тагове за
+        изобразяване
+        на текст, таблици, подредени списъци и неподредени списъци и др. В HTML страницата има два основни раздела:
+        раздел head
+        (глава) и раздел body (тяло). Данните, които описват страницата, наричани още метаданни, се намират в секцията
+        head
+        (глава), докато секцията body (тяло) включва всички тагове, които са необходими за представяне на видимото
+        съдържание на
+        уеб страницата HTML е платформено независим език, така че може да се използва във всяка платформа като Windows,
+        Linux,
+        Macintosh и др.
+
+        Съществуват различни версии на HTML. Най-новата версия е HTML 5. тя има по-усъвършенствани функции като
+        геолокация,
+        поддръжка на аудио и видео, Canvas, уеб сокет и др. Обикновено HTML е лесен за откриване и използване език.
+        Програмистът
+        може да създаде HTML файл, използвайки обикновен текстов редактор, и да го изпълни, използвайки браузър.
+      </p>
+    </section>
+  </section>
+
+
+  <section id="code" class="code">
+    <h1>Примерен код</h1>
+
+    <section class="split-section">
+      <section class="codePart">
+        <h2>LaTeX код. Пример1:</h2>
+        <pre><code>
+\documentclass{article}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+ 
+\begin{document}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{mesh}
+    \caption{A nice plot.}
+    \label{fig:mesh1}
+\end{figure}
+       
+As you can see in figure \ref{fig:mesh1}, the function grows
+near the origin. This example is on page \pageref{fig:mesh1}.
+
+\end{document}
+      </code>
+      </pre>
+      </section>
+
+
+      <section class="output-container">
+        <h2>Резултат от Пример 1</h2>
+        <p>Това е резултатът от изпълнения код:</p>
+        <img src="./img/LaTeX1.png" alt="Пример1 LaTeX">
+      </section>
+
+    </section>
+
+    <section class="split-section">
+      <section class="codePart">
+        <h2>LaTeX код. Пример2:</h2>
+        <pre>
+          <code>
+\documentclass{article}
+\usepackage{amsmath}% For the equation* environment
+\begin{document}
+\section{First example}
+
+%The well-known Pythagorean theorem \(x^2 + y^2 = z^2\) was proved to be invalid for other exponents, meaning the next
+%equation has no integer solutions for \(n&gt;2\):
+
+\[ x^n + y^n = z^n \]
+
+\section{Second example}
+
+%This is a simple math expression \(\sqrt{x^2+1}\) inside text.
+%And this is also the same:
+\begin{math}
+\sqrt{x^2+1}
+\end{math}
+but by using another command.
+
+%This is a simple math expression without numbering
+\[\sqrt{x^2+1}\]
+%separated from text.
+
+%This is also the same:
+\begin{displaymath}
+\sqrt{x^2+1}
+\end{displaymath}
+
+\ldots and this:
+\begin{equation*}
+\sqrt{x^2+1}
+\end{equation*}
+\end{document}
+        </code>
+        </pre>
+      </section>
+
+      <section class="output-container">
+        <h2>Резултат от Пример 2</h2>
+        <p>Това е резултатът от изпълнения код:</p>
+        <img src="./img/LaTeX2.png" alt="Пример2 LaTeX">
+      </section>
+    </section>
+
+    <section class="split-section">
+      <section class="codePart">
+        <h2>HTML код. Пример 1</h2>
+        <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;My First Webpage&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;Welcome to My Webpage&lt;/h1&gt;
+    &lt;p&gt;This is my first paragraph of text!&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+    </code></pre>
+      </section>
+
+      <section class="output-container">
+        <h2>Резултат от Пример 1</h2>
+        <p>Това е резултатът от изпълнения код:</p>
+        <img src="./img/html1.png" alt="Пример1 HTML">
+      </section>
+    </section>
+
+    <section class="split-section">
+      <section class="codePart">
+        <h2>HTML код. Пример 2</h2>
+        <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My First Webpage&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0077cc;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Welcome to My Webpage&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;h2&gt;About Me&lt;/h2&gt;
+        &lt;p&gt;Hello! My name is Alex, and I am learning how to create websites using HTML. This is my first webpage!&lt;/p&gt;
+        
+        &lt;h2&gt;My Hobbies&lt;/h2&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Reading books&lt;/li&gt;
+            &lt;li&gt;Walking in nature&lt;/li&gt;
+            &lt;li&gt;Learning programming&lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;h2&gt;Contact Me&lt;/h2&gt;
+        &lt;p&gt;If you want to reach out, email me at &lt;a href="mailto:example@example.com"&gt;example@example.com&lt;/a&gt;.&lt;/p&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+        &lt;p&gt;&copy; 2024 Alex's Website&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+      </section>
+
+      <section class="output-container">
+        <h2>Резултат от Пример 2</h2>
+        <p>Това е резултатът от изпълнения код:</p>
+        <img src="./img/html2.png" alt="Пример2 HTML">
+      </section>
+
+    </section>
+
+  </section>
+
+  <section id="moreCode" class="moreCode">
+    <h1>Синтаксис</h1>
+
+    <section class="codeLaTeX">
+      <h1>LaTeX</h1>
+
+      <section class="box-code-latex">
+        <section class="box">
+          <section class="text-block">
+            <h2>Уводна част</h2>
+            <p>
+              Един минимален увод на документа може да изглежда по следния начин, където
+              <code>\documentclass[12pt, letterpaper]{article}</code> определя общия клас (тип) на документа:
+            </p>
+          </section>
+          <pre><code>
+\documentclass[12pt, letterpaper]{article}
+\usepackage{graphicx}
+          </code></pre>
+        </section>
+
+        <section class="box">
+          <h2>Стилизация на шрифт</h2>
+          <section class="text-block">
+            <p><strong>Удебелен шрифт:</strong> удебеленият текст в LaTeX се набира с помощта на командата
+              <code>\textbf{...}</code>
+            </p>
+
+            <p><strong>Курсив:</strong> текстът в курсив се създава с помощта на командата <code>\textit{...}</code>.
+            </p>
+
+            <p><strong>Подчертаване:</strong> за да подчертаете текст, използвайте командата
+              <code>\underline{...}</code>.
+            </p>
+
+          </section>
+        </section>
+
+        <section class="box">
+          <h2>Коментари</h2>
+          <section class="text-block">
+            <p>
+              За да направите коментар в LaTeX, просто напишете символа <code>%</code> в началото на реда:
+            </p>
+          </section>
+          <pre><code>% This line here is a comment.</code></pre>
+        </section>
+
+        <section class="box">
+          <h2>Информация, автор и дата</h2>
+          <section class="text-block">
+            <p>
+              <strong>Включване на информация за заглавие, автор и дата:</strong> добавянето на заглавие, автор и дата
+              към
+              нашия
+              документ изисква още три реда в увода. Те са:
+            </p>
+            <ul>
+              <li><code>\title{My first LaTeX document}</code>: заглавието на документа</li>
+              <li><code>\author{Hubert Farnsworth}</code>: тук пишете името на автора/ите</li>
+              <li><code>\date{August 2022}</code>: въведете датата ръчно или използвайте <code>\today</code> за текущата
+                дата</li>
+            </ul>
+          </section>
+
+          <pre><code>
+\title{My first LaTeX document}
+\author{Hubert Farnsworth}
+\date{\today}</code></pre>
+        </section>
+
+        <section class="box">
+          <h2>Изображения</h2>
+          <section class="text-block">
+            <p><strong>Добавяне на изображения:</strong> Един от начините за това е да използвате командата
+              <code>\includegraphics</code>, както е показано тук:
+            </p>
+          </section>
+
+          <pre><code>
+\graphicspath{{images/}} % configuring the graphicx package
+\includegraphics{myImg}
+      </code></pre>
+        </section>
+
+        <section class="box">
+          <h2>Неподредени списъци</h2>
+          <section class="text-block">
+            <p><strong>Неподредени списъци:</strong> Пример за обикновен неподреден списък:</p>
+          </section>
+
+          <pre><code>
+\begin{itemize}
+\item The individual entries are indicated with a black dot.
+\item The text in the entries may be of any length.
+\end{itemize}
+      </code></pre>
+        </section>
+
+        <section class="box">
+          <h2>Математика</h2>
+          <section class="text-block">
+            <p><strong>Добавяне на математика:</strong> LaTeX предоставя два режима за писане на математически изрази:
+            </p>
+
+            <ul>
+              <li><strong>Inline math mode:</strong> Изрази, които са част от текст.</li>
+              <li><strong>Display math mode:</strong> Изрази, които се пишат на отделни редове.</li>
+            </ul>
+          </section>
+
+          <pre><code>
+Inline math mode:
+$E=mc^2$
+
+Display math mode:
+\[ E=mc^2 \]
+          </code></pre>
+
+          <section class="text-block">
+            <p>
+              Ако сте заинтересовани от математиката в LaTeX, можете да откриете повече
+              <a href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes#Adding_math_to_LaTeX"
+                target="_blank">тук</a>.
+            </p>
+          </section>
+        </section>
+
+
+        <section class="box">
+          <h2>Създаване на таблици</h2>
+          <section class="text-block">
+            <p><strong>Създаване на таблици:</strong> Пример за таблица:</p>
+          </section>
+          <pre><code>
+\begin{center}
+\begin{tabular}{|c|c|c|}
+ \hline
+ cell1 & cell2 & cell3 \\ 
+ cell4 & cell5 & cell6 \\ 
+ cell7 & cell8 & cell9 \\ 
+ \hline
+\end{tabular}
+\end{center}
+      </code></pre>
+        </section>
+      </section>
+
+      <section class="codeHTML">
+
+        <h2>Семантичен HTML</h2>
+
+        <section class="text-content-img">
+          <section class="text-content">
+            <p>
+              В семантичния HTML се използват елементи, които ясно описват значението си по начин, удобен за четене от
+              хора
+              и
+              машини.
+            </p>
+
+            <p><strong>Общи семантични елементи:</strong></p>
+
+            <ul>
+              <li><code>&lt;header&gt;</code>: Дефинира заглавие за документ или раздел.</li>
+              <li><code>&lt;body&gt;</code>: Определя тялото на документа.</li>
+              <li><code>&lt;nav&gt;</code>: Съдържа навигационни връзки.</li>
+              <li><code>&lt;main&gt;</code>: Посочва основното съдържание.</li>
+              <li><code>&lt;section&gt;</code>: Групира свързаното съдържание.</li>
+              <li><code>&lt;article&gt;</code>: Представлява самостоятелна част от съдържанието (напр. публикация в
+                блог).
+              </li>
+              <li><code>&lt;aside&gt;</code>: Съдържа съдържание, свързано с основното съдържание (напр. странична
+                лента).
+              </li>
+              <li><code>&lt;footer&gt;</code>: Определя долния колонтитул на документ или раздел.</li>
+            </ul>
+
+          </section>
+
+          <img src="./img/SemanticHtml.png" alt="HTML logo" />
+        </section>
+
+        <h2>Пример за семантичен HTML</h2>
+
+        <section class="split-section">
+          <section class="codePart">
+
+            <pre><code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Semantic HTML Example&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;header&gt;
+                &lt;h1&gt;My Blog&lt;/h1&gt;
+            &lt;/header&gt;
+            &lt;nav&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+            &lt;main&gt;
+                &lt;article&gt;
+                    &lt;h2&gt;First Post&lt;/h2&gt;
+                    &lt;p&gt;Welcome to my blog! This is my first post.&lt;/p&gt;
+                &lt;/article&gt;
+            &lt;/main&gt;
+            &lt;footer&gt;
+                &lt;p&gt;© 2024 My Blog&lt;/p&gt;
+            &lt;/footer&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+      </code></pre>
+          </section>
+
+          <section class="output-container">
+            <h2>Резултат от Семантичен HTML</h2>
+            <p>Това е резултатът от изпълнения код:</p>
+            <img src="./img/semanticHTMLexample.png" alt="Пример Семантичен HTML">
+          </section>
+        </section>
+
+        <h1>Основни тагове</h1>
+
+        <section class="box-code-html">
+          <section class="box">
+            <h2>Заглавия</h2>
+
+            <section class="text-block">
+              <p><strong>HTML Заглавия:</strong></p>
+              <ul>
+                <li><code>&lt;h1&gt;</code>: Главно заглавие</li>
+                <li><code>&lt;h2&gt;</code>: Подзаглавие</li>
+                <li><code>&lt;h3&gt;</code>: По-малко подзаглавие</li>
+              </ul>
+              <p>Пример:</p>
+            </section>
+
+            <pre><code>
+&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Subheading&lt;/h2&gt;
+&lt;h3&gt;Smaller Heading&lt;/h3&gt;
+        </code></pre>
+          </section>
+
+          <section class="box">
+            <h2>Параграфи</h2>
+            <section class="text-block">
+              <p>Елементът <code>&lt;p&gt;</code> в HTML дефинира параграф:</p>
+            </section>
+            <pre><code>&lt;p&gt;Това е абзац от текст.&lt;/p&gt;
+      </code></pre>
+          </section>
+
+          <section class="box">
+            <h2>Подреден списък (номериран):</h2>
+
+            <section class="text-block">
+              <p><strong>В подреден списъци</strong></p>
+              <ul>
+                <li><code>&lt;ol&gt;</code>: подреден списък</li>
+                <li><code>&lt;li&gt;</code>: елемент на списък</li>
+              </ul>
+            </section>
+
+            <pre><code>
+&lt;ol&gt;
+  &lt;li&gt;First item&lt;/li&gt;
+  &lt;li&gt;Second item&lt;/li&gt;
+&lt;/ol&gt;
+          </code></pre>
+
+          </section>
+
+          <section class="box">
+            <h2>Неподреден списък (булети):</h2>
+
+            <section class="text-block">
+              <p><strong>В неподредените списъци</strong></p>
+              <ul>
+                <li><code>&lt;ul&gt;</code>: неподреден списък</li>
+                <li><code>&lt;li&gt;</code>: елемент на списък</li>
+              </ul>
+            </section>
+
+            <pre><code>
+&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+          </code></pre>
+
+          </section>
+
+          <section class="box">
+            <h2>Форми</h2>
+
+            <section class="text-block">
+              <p><strong>Форми</strong></p>
+              <ul>
+                <li><code>&lt;label&gt;</code>: етикет</li>
+                <li><code>&lt;button&gt;</code>: бутон</li>
+                <li><code>&lt;input&gt;</code>: място за въвеждане на информация</li>
+              </ul>
+            </section>
+
+            <pre><code>
+&lt;form action="/submit" method="post"&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+        </code></pre>
+          </section>
+
+          <section class="box">
+            <h2>Таблици</h2>
+
+            <section class="text-block">
+              <p><strong>Тагове в таблица</strong></p>
+              <ul>
+                <li><code>&lt;th&gt;</code>: за заглавията</li>
+                <li><code>&lt;tr&gt;</code>: за редовете</li>
+                <li><code>&lt;td&gt;</code>: за стойностите</li>
+              </ul>
+            </section>
+
+            <pre><code>
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Company&lt;/th&gt;
+    &lt;th&gt;Contact&lt;/th&gt;
+    &lt;th&gt;Country&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Alfreds Futterkiste&lt;/td&gt;
+    &lt;td&gt;Maria Anders&lt;/td&gt;
+    &lt;td&gt;Germany&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Centro comercial Moctezuma&lt;/td&gt;
+    &lt;td&gt;Francisco Chang&lt;/td&gt;
+    &lt;td&gt;Mexico&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+        </code></pre>
+          </section>
+
+        </section>
+      </section>
+    </section>
+
+    <section id="history" class="history">
+      <h1>История</h1>
+
+      <section class="historyLaTeX">
+        <h2>Историята на Латех и защо е важен:</h2>
+        <p>
+          LaTeX е създаден в началото на 80-те години на миналия век от Лесли Лампорт, когато работи в Станфордския
+          изследователски институт (SRI). Трябвало му е да пише макроси за TeX за собствена употреба и е смятал, че с
+          малко
+          допълнителни усилия може да направи общ пакет, който да се използва и от други хора.
+        </p>
+        <p>
+          TeX (/ˈtɛx/ tekh като на гръцки, но на английски често се произнася /ˈtɛk/ tek) е система за набор на текст,
+          проектирана
+          и основно написана от Доналд Кнут и пусната на пазара през 1978 г. В рамките на системата за набор на текст
+          името ѝ се
+          форматира като TeX.
+        </p>
+        <p>
+          Преди да има средства за масово производство много велики идеи са били заключени в тетрадки и ръкописи,
+          написани на
+          ръка. Писарите са имали задачата да създават
+          ръкописни копия на важни, но това е било скъпо, бавно и ненадеждно. Изобретяването на печатарската преса прави
+          революция
+          - променя начина, по който споделяме знания и предаваме идеи. Изведнъж книгите се появяват навсякъде и
+          разпространението
+          на информация се засилва по време на Ренесанса в Европа през XV век. Не само механизмът на пресата е отговорен
+          за
+          бързото производство на книги, но също така и използването на подвижен шрифт.
+        </p>
+        <p>
+          Печатите и други методи за печатането датира много по-отдавна, но именно Гутенберг е използвал малки
+          взаимозаменяеми
+          букви, отляти от метал, което позволява бързо и надеждно възпроизвеждане на печатни произведения. Печатарската
+          индустрия
+          продължава да се развива и с течение на годините се изобретяват нови методи на производство.
+        </p>
+        <p>
+          Една от новите концепции от революцията в печатането е изкуството да се подреждат букви върху страницата,
+          известно като
+          типография. Навсякъде около нас има шрифтове, а някои имати уникална история. Формата, която буквите приемат,
+          може да
+          окаже съществено влияние и да предаде допълнителен вкус на текста.
+        </p>
+        <p>
+          Има много неща, които трябва да се вземат предвид, като например формата на буквата, разстоянието между
+          буквите и общата
+          четивност, а има компании, които проектират и продават шрифтове. Днес често се наричат леярни, поради техния
+          произход в
+          областта на леенето на малки букви от разтопен метал.
+        </p>
+        <p>
+          На 30 март 1977 г. Доналд Кнут получава корекциите на второто издание на книгата си „Изкуството на
+          компютърното
+          програмиране“. Преглеждайки страниците, Кнут е
+          разочарован от резултатите. Първото издание, публикувано през 1968 г., е
+          направено по метода, наречен горещ метален печат, при който разтопено олово се отлива, която по-късно се
+          използва за
+          отпечатване, но през 70-те години на миналия век печатната индустрия е преминала от печатане върху горещ метал
+          към
+          техника за фотопечат, при която буквите се прожектират върху хартията, подобно на начина, по който се проявява
+          филм.
+        </p>
+        <p>
+          Класическият вид, който Кнут оценява, е загубен и това го мотивира да създаде
+          собствена система за набор на текст. Името TeX е предназначено да се произнася с
+          крайната съгласна подобно на Loch или Bach.
+        </p>
+        <p>
+          Буквите на името представляват главните гръцки букви τ, ε, χ (тау, епсилон и хи), тъй като TeX е съкращение на
+          гръцкото
+          techne, което означава едновременно изкуство и занаят. Techne е коренът на думи като техника или технически, а
+          наименованието е изрично указано да бъде набрано с буквата E под основната линия и с намалено разстояние между
+          буквите.
+          Широката визия на Кнут е да направи създаването на висококачествени публикации по-достъпно и да гарантира, че
+          резултатите са възпроизводими на всички компютри. Това, което е започнало като малък
+          личен проект се е превърнало в десетилетно задълбочаване в света на типографията.
+        </p>
+        <p>
+          В сътрудничество със Станфордския университет по изкуствата Кнут разработва Metafont - език за програмиране,
+          използван
+          за описване, манипулиране и създаване на шрифтове. Математическите основи на Metafont означават, че могат да
+          се правят
+          точни дефиниции на шрифтовете. Metafont е проектиран да се използва заедно с TeX за създаване на изцяло
+          възпроизводим
+          документ. Metafont създава буквите и Tech ги поставя на страницата.Накрая, Кнут използва Metafont, за да
+          създаде шрифта
+          Computer Modern. Този шрифт улавя класическия вид, който той оценява. Това е и шрифтът по подразбиране за TeX
+          документите, с това той създава определена естетика на математическото писане.
+        </p>
+        <p>
+          Тези три нововъведения правят революция в академичното публикуване. Най-важното е усъвършенстването на TeX
+          улесни
+          другите потребители, да разширят езика и да създадат свои собствени системи. През 80-те години на миналия век
+          Лесли
+          Лампорт
+          съставя колекция от TeX в език от високо ниво, наречен LaTeX. Лампорт е много по-щадящ по отношение на
+          произношение
+          /lah-tech/, /lay-tech/, /lay-techs/. LaTeX се превръща в стандарт за публикуване на научни материали и
+          продължава да се
+          използва широко и до днес.
+        </p>
+      </section>
+
+      <section class="historyHTML">
+        <h2>Историята на HTML:</h2>
+        <p>
+          През 1980 г. физикът Тим Бърнърс-Лий, изпълнител в ЦЕРН, предлага и създава прототип на ENQUIRE - система за
+          използване
+          и споделяне на документи от изследователите на ЦЕРН. През 1989 г. Бърнърс-Лий пише бележка, в която предлага
+          интернет
+          базирана хипертекстова система. В края на 1990 г. Бърнърс-Лий специфицира HTML и написва софтуера за браузъра
+          и сървъра.
+          Същата година Бърнърс-Лий и инженерът по системите за данни на ЦЕРН Робърт Кайо си сътрудничат в съвместното
+          искане за
+          финансиране, но проектът не е официално приет от ЦЕРН. В личните си бележки от 1990 г. Бърнърс-Лий изброява
+          „някои от
+          многото области, в които се използва хипертекст“; енциклопедия е първият запис.
+        </p>
+        <p>
+          Първото публично достъпно описание на HTML е документ, наречен „HTML Tags“, споменат за първи път в интернет
+          от Тим
+          Бърнърс-Лий в края на 1991 г. В него са описани 18 елемента, съставляващи първоначалния, сравнително прост
+          дизайн на
+          HTML. С изключение на тага за хипервръзка, те са силно повлияни от SGMLguid, вътрешен формат за документация,
+          базиран на
+          стандартния обобщен маркиращ език (SGML) в CERN. Единадесет от тези елементи все още съществуват в HTML 4.
+        </p>
+      </section>
+    </section>
+
+    <section id="cons" class="cons">
+      <h1>Недостатъци</h1>
+
+      <section class="consLaTeX">
+        <h2>Недостатъци на LaTeX:</h2>
+        <p>
+          LaTeX разчита в голяма степен на наклонени черти, отворени и затворенискоби, но поради тяхната
+          непоследователност е
+          трудно да се разбере дали нещо е среда или функция, кои параметри не са задължителни и как се задават.
+          Обширният
+          речник
+          и загадъчният синтаксис не предлагат достатъчно основа, върху която да се надгражда, което превръща
+          овладяването
+          в
+          усилие за цял живот.
+        </p>
+        <ol>
+          <li>
+            <strong>Зависимост на пакетите</strong>
+            Силата на LaTeX се крие в неговите пакети, които позволяват всичко - от локализация до сложни химически
+            формули. Това
+            обаче си има цена: лошо документираните и изоставени пакети често са трудни, което води до грешки или
+            недостатъчни
+            резултати. Постигането на прости функции може да прилича на сглобяване на код от Stack Overflow, без да го
+            разбирате.
+          </li>
+          <li>
+            <strong>Предизвикателства при проектирането</strong>
+            Стилизирането в LaTeX е пословично неизменимо. Макар да създава чисти, функционални дизайни, създаването на
+            нещо
+            визуално уникално обикновено включва нарушаване на разделението между съдържание и дизайн - често пъти
+            небрежно.
+            Документите на LaTeX обикновено имат характерен, неизменен вид.
+          </li>
+          <li>
+            <strong>Плаващи обекти</strong>
+            Обещанието на LaTeX за перфектно позиционирани плаващи обекти често се проваля на практика. Изображенията и
+            таблиците
+            често се оказва, че са събрани в края на главите, което затруднява подреждането на визуалните елементи със
+            свързаното с
+            тях съдържание.
+          </li>
+          <li>
+            <strong>Неразбираеми грешки</strong>
+            LaTeX наказва грешките със загадъчни съобщения за грешки, скрити в многословен изход за отстраняване на
+            грешки.
+            Проследяването на липсваща скоба или неправилно подредена среда може да отнеме часове. Това разочарование
+            често кара
+            потребителите да се питат защо изобщо са започнали да го използват.
+          </li>
+        </ol>
+      </section>
+
+      <section class="consHTML">
+        <h2>Недостатъци на HTML:</h2>
+        <ul>
+          <li>Той не може да създава динамични резултати, тъй като е статичен език.</li>
+          <li>Структурата на HTML документите става трудна за разбиране.</li>
+          <li>Грешките могат да бъдат скъпоструващи.</li>
+          <li>Той отнема толкова време, колкото отнема поддържането на цветовата схема на страницата и съставянето на
+            списъци,
+            таблици и форми.</li>
+          <li>Трябва да напишем много код само за създаването на една проста уебстраница.</li>
+          <li>Трябва да проверяваме изчерпаните тагове и да потвърждаваме, че не трябва да ги използваме, за да се
+            появят,
+            защото друг език, който работи с HTML, е заменил първата работа на тага и следователно трябва да се разбере
+            и
+            научи
+            противоположният език.</li>
+          <li>Функциите за сигурност, предлагани от HTML, са ограничени.</li>
+          <li>Ако трябва да записваме дълъг код за създаване на уебстраница, тогава това създава известна сложност.</li>
+          <li>HTML може да създава само статични и обикновени страници, така че ако бихме искали динамични страници,
+            тогава HTML
+            не е полезен.</li>
+          <li>Редактирането на уебстраници трябва да се извършва отделно, те не са централизирани.</li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="sources" class="sources">
+      <h2>Източници</h2>
+
+      <h3>LaTeX:</h3>
+      <p id="sourceLink">[1] A Short History of TeX and LaTeX, линк: [ <a
+          href="https://swetava.wordpress.com/2013/10/31/a-short-history-of-tex-and-latex/"
+          target="_blank">https://swetava.wordpress.com/2013/10/31/a-short-history-of-tex-and-latex/</a> ] </p>
+      <p id="sourceLink">[2] Eitan Lees - What is LaTeX?, линк: [ <a
+          href="https://www.youtube.com/watch?v=9eLjt5Lrocw&ab_channel=EitanLees"
+          target="_blank">https://www.youtube.com/watch?v=9eLjt5Lrocw&ab_channel=EitanLees</a> ] </p>
+      <p id="sourceLink">[3] Learn LaTeX in 30 minutes - What is LaTeX?, линк: [ <a
+          href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes#What_is_LaTeX?"
+          target="_blank">https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes#What_is_LaTeX?</a> ] </p>
+      <p id="sourceLink">[4] Learn LaTeX in 30 minutes - The Preamble of a Document, линк: [ <a
+          href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes#The_preamble_of_a_document"
+          target="_blank">https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes#The_preamble_of_a_document</a>
+        ]
+      </p>
+      <p id="sourceLink">[5] Learn LaTeX in 30 minutes - Adding Math to LaTeX, линк: [ <a
+          href="https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes#Adding_math_to_LaTeX"
+          target="_blank">https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes#Adding_math_to_LaTeX</a> ] </p>
+      <p id="sourceLink">[6] LaTeX - Wikipedia, линк: [ <a href="https://en.wikipedia.org/wiki/LaTeX"
+          target="_blank">https://en.wikipedia.org/wiki/LaTeX</a> ] </p>
+
+      <h3>HTML:</h3>
+      <p id="sourceLink">[7] HTML Introduction - GeeksforGeeks, линк: [ <a
+          href="https://www.geeksforgeeks.org/html-introduction/"
+          target="_blank">https://www.geeksforgeeks.org/html-introduction/</a> ] </p>
+      <p id="sourceLink">[8] What is HTML and Why Should I Learn It? - Code Institute, линк: [ <a
+          href="https://codeinstitute.net/global/blog/what-is-html-and-why-should-i-learn-it/#:~:text=Without%20HTML%20the%20web%20as,to%20links%2C%20tags%20and%20attributes."
+          target="_blank">https://codeinstitute.net/global/blog/what-is-html-and-why-should-i-learn-it/#:~:text=Without%20HTML%20the%20web%20as,to%20links%2C%20tags%20and%20attributes.</a>
+        ] </p>
+      <p id="sourceLink">[9] Advantages and Disadvantages of HTML - GeeksforGeeks, линк: [ <a
+          href="https://www.geeksforgeeks.org/advantages-and-disadvanatges-of-html/"
+          target="_blank">https://www.geeksforgeeks.org/advantages-and-disadvanatges-of-html/</a> ] </p>
+      <p id="sourceLink">[10] HTML Tutorial - W3Schools, линк: [ <a href="https://www.w3schools.com/html/"
+          target="_blank">https://www.w3schools.com/html/</a> ] </p>
+      <p id="sourceLink">[11] Semantic HTML photo: [ <a href="https://www.semrush.com/blog/semantic-html5-guide/"
+          target="_blank">https://www.semrush.com/blog/semantic-html5-guide/</a> ] </p>
+
+    </section>
+
+</body>
+
+</html>

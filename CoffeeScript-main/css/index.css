@@ -1,0 +1,290 @@
+@import url(header.css);
+@import url(css-reset.css);
+@import url(font-awesome.css);
+@import url("/font-awesome-4.6.3/css/font-awesome.min.css");
+@import url(feature-one.css);
+@import url(feature-two.css);
+@import url(feature-three.css);
+@import url(feature-four.css);
+@import url(feature-five.css);
+@import url(feature-six.css);
+@import url(menu.css);
+@import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+section {
+  font-family: "Raleway";
+}
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+h2 {
+  padding-top: 40px;
+}
+
+h3 {
+  text-align: center;
+  padding-top: 15px;
+}
+
+p {
+  padding-top: 10px;
+}
+
+.intro {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: 0px auto;
+}
+
+pre {
+  margin-right: 1px;
+}
+
+.info {
+  padding-left: 400px;
+  max-width: 800px;
+
+  margin: 50px 100px 50px 100px;
+  border-radius: 3px;
+}
+
+.update {
+  background-color: red;
+}
+
+.button-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.fixed-button {
+  padding: 10px 20px;
+  background-color: #885f43;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.fixed-button:hover {
+  background-color: #412e20;
+}
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container-coffee {
+  position: fixed;
+  background-color: #885f43;
+  height: 100%;
+  padding-top: 50px;
+  min-width: 250px;
+}
+
+.info section {
+  margin-top: 20px;
+}
+
+body {
+  background: bisque;
+}
+
+.row {
+  position: relative;
+  margin: 0 auto;
+}
+
+:before,
+:after {
+  position: absolute;
+  content: "";
+}
+
+.beans {
+  margin: 10px auto;
+  width: 25px;
+  height: 35px;
+  background: #8b4c39;
+  border-radius: 50%;
+  animation: drop2 1s ease-in infinite;
+}
+
+.beans:before {
+  left: 13px;
+  width: 2px;
+  border-radius: 50%;
+  height: 85%;
+  background: #5e2605;
+  transform: rotate(-5deg);
+}
+
+.grinder {
+  height: 90px;
+  width: 150px;
+  border-radius: 5px 5px 60px 60px;
+  background: #1d1d1d;
+}
+
+.grinder:before {
+  left: 30px;
+  top: 75px;
+  width: 90px;
+  height: 10px;
+  border-radius: 20px;
+  background: #1d1d1d;
+}
+
+.grinder:after {
+  z-index: 99;
+  left: 30px;
+  top: 85px;
+  width: 90px;
+  height: 10px;
+  border-radius: 20px;
+  background: #1d1d1d;
+}
+
+.grinder_bottom {
+  margin: 0px auto 50px;
+  height: 90px;
+  width: 150px;
+  border-radius: 60px 60px 5px 5px;
+  background: rgba(255, 255, 255, 0.7);
+  animation: rotate 10s ease-out infinite;
+}
+
+.grinder_bottom:before {
+  bottom: -35px;
+  width: 150px;
+  height: 45px;
+  border-radius: 0px 0px 30px 30px;
+  background: #1d1d1d;
+}
+
+.grinder_bottom:after {
+  top: 5px;
+  left: 10px;
+  width: 130px;
+  height: 16px;
+  border-radius: 60px 60px 0px 0px;
+  background: rgba(0, 0, 0, 0);
+  animation: fill 10s ease-in-out infinite;
+}
+
+@keyframes fill {
+  0% {
+    border-bottom: 0px solid #8b4c39;
+  }
+  50% {
+    border-bottom: 60px solid #8b4c39;
+  }
+  60% {
+    border-bottom: 60px solid #8b4c39;
+  }
+  90% {
+    border-bottom: 0px solid #8b4c39;
+  }
+  100% {
+    border-bottom: 0px solid #8b4c39;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  65% {
+    transform: translate(0px, 90px) rotate(180deg);
+  }
+  90% {
+    transform: translate(0px, 90px) rotate(180deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+
+.v60 {
+  z-index: 99;
+  width: 120px;
+  height: 90px;
+  border-top: 110px solid white;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-radius: 5px;
+}
+
+.v60:after {
+  position: absolute;
+  z-index: 99;
+  content: "";
+  width: 180px;
+  height: 10px;
+  background: white;
+  left: -35px;
+  border-radius: 40px;
+}
+
+.drip {
+  margin: 0 auto 5px;
+  width: 15px;
+  height: 15px;
+  background: #8b4c39;
+  border-radius: 0 40% 40% 40%;
+  animation: drop 1s ease-in infinite;
+}
+
+@keyframes drop {
+  0% {
+    transform: translate(0px, -50px) rotate(45deg);
+  }
+  100% {
+    transform: translate(0px, 90px) rotate(45deg);
+  }
+}
+
+@keyframes drop2 {
+  0% {
+    transform: translate(0px, -50px);
+  }
+  100% {
+    transform: translate(0px, 90px);
+  }
+}
+
+.cup {
+  margin: 20px auto;
+  width: 150px;
+  height: 120px;
+  background: #b7c3d0;
+  border-radius: 5px 5px 60px 60px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}

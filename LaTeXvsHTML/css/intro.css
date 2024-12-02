@@ -1,0 +1,14 @@
+.whatIsIt h3,
+h2 {
+    text-align: center;
+}
+
+.whatIsIt h1 {
+    text-align: left;
+}
+
+.introLaTeX,
+.introHTML {
+    width: 100%;
+    text-align: left;
+}

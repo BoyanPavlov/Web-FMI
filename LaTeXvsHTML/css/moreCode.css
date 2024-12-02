@@ -1,0 +1,32 @@
+.text-content-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+
+.text-content-img img {
+    width: 40%;
+    height: 40%;
+}
+
+.box {
+    flex: 1 1 calc(33.333% - 15px);
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+}
+
+.box-code-html {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.box-code-latex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}

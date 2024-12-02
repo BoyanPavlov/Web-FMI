@@ -1,0 +1,69 @@
+.feature-three .theme {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.feature-three table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature-three h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.feature-three h2 {
+  font-size: 34px;
+  text-align: center;
+}
+
+.feature-three pre {
+  border-radius: 5px;
+  overflow-x: auto;
+  background-color: #2f2625;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.feature-three code {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.feature-three .variable {
+  color: #000000;
+}
+
+.feature-three .value {
+  color: #dad085;
+}
+
+.feature-three table {
+  border-collapse: collapse;
+}
+
+.feature-three th,
+td {
+  padding: 8px;
+}
+
+.feature-three th {
+  background-color: #f2f2f2;
+}
+
+.feature-three table {
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.feature-three tbody {
+  padding-left: 130px;
+}
+
+.feature-three {
+  padding-bottom: 50px;
+}

@@ -1,0 +1,21 @@
+code {
+    font-family: "Courier New", Courier, monospace;
+    background: #f4f4f9;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+pre {
+    background: #eee;
+    padding: 10px;
+    overflow-x: auto;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.codePart,
+.output-container {
+    text-align: left;
+    align-items: center;
+    width: 50%;
+}

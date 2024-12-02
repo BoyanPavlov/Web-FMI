@@ -1,0 +1,62 @@
+@import url(header.css);
+@import url(intro.css);
+@import url(fixedButton.css);
+@import url(sources.css);
+@import url(code.css);
+@import url(moreCode.css);
+
+html {
+    scroll-padding-top: 60px;
+}
+
+.split-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1300px;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3 {
+    color: #0077cc;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.link:hover {
+    color: #007bff;
+    opacity: 1;
+    text-decoration: underline;
+}

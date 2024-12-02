@@ -1,0 +1,13 @@
+#sources {
+    background-color: #eef;
+    padding: 30px;
+}
+
+.sources h2 {
+    text-align: center;
+}
+
+.sources p,
+h3 {
+    text-align: left;
+}

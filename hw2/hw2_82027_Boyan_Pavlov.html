@@ -1,0 +1,72 @@
+<!-- Домашното за CSS изисква да направите HTML форма за регистрация, за която:
+
+В състояние на "покой" изглежда като 1.png;
+Когато с мишката се мине през бутона "Регистрирай ме", изглежда като 2.png;
+Когато с мишката се мине през някой от input-ите или dropdown-а, изглежда като 3.png (border-ът става малко по-тъмен);
+Петото поле е падащо меню (dropdown), както се вижда на 4.png;
+Формата трябва да е центрирана хоризонтално на екрана в browser-a и трябва да се намира на подходящо отстояние от горната част;
+Формата трябва да е зададена чрез подходящи метрики (напр. ширината да е в проценти) така, че да се преоразмерява при свиване или разширяване на екрана по хоризонтала.
+Допълнителни условия и пояснения:
+
+Изпозвайте подходящи типове на input полетата, отговарящи на смисъла им ЗАДЪЛЖИТЕЛНО;
+Предайте нужния HTML и CSS код като отделни файлове, използвайки <link> елемента ЗАДЪЛЖИТЕЛНО (използването на inline и/или internal CSS се счита за груба грешка); 
+Не ползвайте <br> елемента за нов ред ЗАДЪЛЖИТЕЛНО;
+Използвайте семантичен HTML ЗАДЪЛЖИТЕЛНО;
+Използвайте предимно CSS класове (старайте се да не прекопирате/преповтаряте код, а да го преизползвате);
+Може да сложите в падащото меню (петото поле) каквито искате стойности (важното е да е падащо меню);
+Текстовете, които виждате в текстовите полета, са placeholder-и (placeholder атрибута на input HTML тага), а не въведени стойности. -->
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- webpage responsive and adapts its layout to different screen sizes, especially for mobile devices. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> "Регистрация"</title>
+
+    <link rel="stylesheet" href="hw2_82027_styles.css">
+</head>
+
+<body>
+    <main>
+        <form class="registration-form">
+
+            <section class="form-group">
+                <label for="username"> </label>
+                <input id="username" placeholder="Потребителско име" type="text">
+            </section>
+
+            <section class="form-group">
+                <label for="password"> </label>
+                <input id="username" placeholder="Парола" type="password">
+            </section>
+
+            <section class="form-group">
+                <label for="phonenumber"> </label>
+                <input id="phonenumber" placeholder="Телефон" type="number">
+            </section>
+
+            <section class="form-group">
+                <label for="email"> </label>
+                <input id="email" placeholder="Имейл адрес" type="email">
+            </section>
+
+            <section class="form-group">
+                <label for="owner"> </label>
+                <select name="Owner" id="owner">
+                    <option value="owner">Собственик</option>
+                    <option value="tenant">Наемател</option>
+                </select>
+            </section>
+
+            <section class="form-group">
+                <label for="numOfappartment"> </label>
+                <input id="numOfappartment" placeholder="Номер на апартамента" type="text">
+            </section>
+
+            <button>Регистрирай ме</button>
+        </form>
+    </main>
+</body>
+
+</html>

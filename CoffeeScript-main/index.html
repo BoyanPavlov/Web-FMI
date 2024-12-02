@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoffeeScript</title>
+    <link href="./css/index.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/4986c7453d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="button-container">
+      <a class="fixed-button" href="#home">^</a>
+    </section>
+   
+    <header class="sticky-header">
+      <section class="container nav-container">
+        <section class="logo-wrapper" >
+          <img
+            src="./img/coffeescript-white-logo-no-bg.png"
+            alt="CoffeeScript logo"
+          />
+        </section>
+        <nav>
+          <ul>
+            <li><a href="#feature-one">Кратко запознанство</a></li>
+            <li><a href="#feature-two">Опознаване на кода</a></li>
+            <li><a href="#feature-three">Малко повече</a></li>
+            <li><a href="#feature-four">История</a></li>
+            <li><a href="#feature-five">Интеграции</a></li>
+            <li><a href="#feature-six">Инсталиране</a></li>
+            <li><a href="#feature-seven">Има ли недостатъци?</a></li>
+          </ul>
+        </nav>
+      </section>
+      
+    </header>
+    <p class="update">____</p>
+    <section class="page-design">
+      <section class="container">
+        <section class="menu">
+          <section class="container-coffee">
+            <section class="row beans">
+            </section>
+            <section class="row grinder">
+            </section>
+            <section class="row grinder_bottom">
+            </section>
+            <section class="row v60">
+            </section>
+            <section class="row drip">
+            </section>
+            <section class="row cup">
+            </section>
+          </section>
+      </section>
+      <section class="info">
+        <section id="feature-one" class="feature-one">
+          <h3 class="intro">
+              Освен Java, JavaScript и Mocha - има изненадващ брой езици за
+              програмиране, кръстени на кафе. Един език, за който може би не сте
+              чували преди?
+            </h3>
+          <img src="./img/coffeescript-logo-no-bg.png" alt="" id="home"/>
+          <br /><br /><br />
+          <h1>Кратко запознанство с CoffeeScript!</h1>
+          <br /><br />
+          <p>
+          
+              CoffeeScript е малък език, който се компилира в JavaScript. Под тази
+            неудобна патина в стил Java JavaScript винаги е имал прекрасно
+            сърце. CoffeeScript е опит да се разкрият добрите части на
+            JavaScript по лесен начин. <br /><br>
+            Златното правило на CoffeeScript е: „Това е просто JavaScript.“
+            Кодът се компилира едно към едно в еквивалентен JS и няма
+            интерпретация по време на изпълнение. Можете да използвате всяка
+            съществуваща JavaScript библиотека безпроблемно от CoffeeScript (и
+            обратно). Компилираният изход е четим, красиво отпечатан и има
+            тенденция да работи толкова бързо или по-бързо от еквивалентния
+            JavaScript код. Нататък ще разбереш повече за времето и причините за
+            създаване на този език.
+          </p>
+        </section>
+        <section id="feature-two" class="feature-two">
+          <h1>Опознаване на кода</h1>
+          <h2>Нека направим сравнение с чист JavaScript:</h2>
+          <section class="code">
+            <pre>    
+        <code class="comment"># Assignment:</code>
+        <code class="variable">number</code>   = <code class="value">42</code>
+        <code class="boolean">opposite</code> = <code class="boolean">true</code>
+                
+        <code class="comment"># Conditions:</code>
+        <code class="variable">number</code> = <code class="value">-42</code> if <code class="boolean">opposite</code>
+                
+        <code class="comment"># Functions:</code>
+        <code>square</code> = (x) -> x * x
+                
+        <code class="comment"># Arrays:</code>
+        <code>list</code> = [<code class="value">1</code>, <code class="value">2</code>, <code class="value">3</code>, <code class="value">4</code>, <code class="value">5</code>]
+                
+        <code class="comment"># Objects:</code>
+        <code>math</code> =
+          root:   Math.<code class="keyword">sqrt</code>
+          square: square
+          cube:   (x) -> x * square x
+                
+        <code class="comment"># Splats:</code>
+        <code>race</code> = (winner, runners...) <code>-></code>
+          print winner, runners
+                
+        <code class="comment"># Existence:</code>
+        alert "I knew it!" if <code class="variable">elvis</code>?
+                
+        <code class="comment"># Array comprehensions:</code>
+        <code>cubes = (math.</code><code class="value">cube</code> <code>num</code> <code class="value">for</code> <code>num <code class="value">in</code> list</code>)
+      </pre>
+      <pre>    
+        <code class="comment">// Assignment:</code>
+        <code class="keyword">var</code> cubes, list, math, num, number, opposite, race, square;
+        
+        <code class="variable">number</code> = <code class="number">42</code>;
+        
+        <code class="variable">opposite</code> = <code class="boolean">true</code>;
+        
+        <code class="keyword">if</code> (<code class="variable">opposite</code>) {
+          <code class="comment">// Conditions:</code>
+          <code class="variable">number</code> = <code class="number">-42</code>;
+        }
+        
+        <code class="comment">// Functions:</code>
+        <code class="variable">square</code> = <code class="variable">x</code>) => {
+          <code class="keyword">return</code> <code class="variable">x</code> * <code class="variable">x</code>;
+        };
+        
+        <code class="comment">// Arrays:</code>
+        <code>list</code> = [<code class="number">1</code>, <code class="number">2</code>, <code class="number">3</code>, <code class="number">4</code>, <code class="number">5</code>];
+        
+        <code class="comment">// Objects:</code>
+        <code class="variable">math</code> = {
+          <code class="property">root</code>: Math.<code class="property">sqrt</code>,
+          <code class="property">square</code>: <code class="variable">square</code>,
+          <code class="property">cube</code>: <code class="variable">x</code>) => {
+            <code class="keyword">return</code> <code class="variable">x</code> * <code class="variable">square</code>(<code class="variable">x</code>);
+          }
+        };
+        
+        <code class="comment">// Splats:</code>
+        <code class="variable">race</code> = <code class="variable">winner</code>, <code class="argument">...</code><code class="variable">runners</code>) => {
+          <code class="keyword">return</code> print(<code class="variable">winner</code>, <code class="argument">...</code><code class="variable">runners</code>);
+        };
+        
+        <code class="keyword">if</code> (<code class="keyword">typeof</code> <code class="variable">elvis</code> !== <code class="string">"undefined"</code> && <code class="variable">elvis</code> !== <code class="literal">null</code>) {
+          <code class="comment">// Existence:</code>
+          alert(<code class="string">"I knew it!"</code>);
+        }
+        
+        <code class="comment">// Array comprehensions:</code>
+        <code>cubes</code> = (() => {
+          <code class="value">var</code><code>, i, len, results</code>;
+          <code>results</code> = [];
+          <code class="keyword">for</code> (<code>i</code><code class="value"> = 0</code>, <code>len</code> = <code>list</code>.<code class="value">length</code>; <code>i</code> <code class="value"><</code> <code>len</code>; <code>i</code><code class="value">++</code> ) {
+            <code>num</code> = <code >list</code>[<code>i</code>];
+            <code>results</code>.<code class="value">push</code>(<code>math</code>.<code class="value">cube</code>(<code>num</code>));
+          }
+          <code class="keyword">return</code> <code>results</code>;
+        })();
+      </code>
+      </pre>
+          </section>
+        </section>
+        <section id="feature-three" class="feature-three">
+  <h1>А сега малко повече по кода</h1>
+  <h3>В тази секция ще разгледаме само част от инетерсните референции към езика</h3>
+  <p>Първо, основите: CoffeeScript използва значително празно пространство за разделяне на блокове от код. Не е необходимо да използвате точка и запетая; 
+    за прекратяване на изрази, завършването на реда ще свърши също толкова добра работа (въпреки че точка и запетая все още може да се използва за поставяне
+     на множество изрази на един ред). Вместо да използвате къдрави скоби { }, за да оградите блокове от код във функции, оператори if, switch и try/catch, 
+     използвайте отстъп.</p>
+     <br><br>
+     <p>Не е необходимо да използвате скоби, за да извикате функция, ако предавате аргументи. Неявното извикване се увива напред до края на реда или блоковия израз.
+      console.log sys.inspect обект → console.log(sys.inspect(object));</p>
+    <h2>Функции</h2>
+    <p>Функциите се дефинират от незадължителен списък с параметри в скоби, стрелка и тялото на функцията.Функциите могат също да имат стойности по подразбиране за аргументи, които ще бъдат използвани, ако входящият аргумент липсва (недефиниран).</p>
+    <section class="theme">
+    <pre>
+      <code class="function">square = ( class="variable">x)</code> <code class="value">-></code> <code >x</code> <code class="value">*</code>  <code>x</code><br>
+      <code class="function">cube</code>   = (<code>x</code>) <code class="value">-></code> <code>square</code><code>(x)</code> <code class="value">*</code> <code>x</code>
+    </pre>
+
+    <pre>
+      <code>var cube, square;</code><br>
+      <code>square = function(x) {</code><br>
+      <code>  return x * x;</code><br>
+      <code>};</code><br>
+      <code>cube = function(x) {</code><bfr>
+      <code>  return square(x) * x;</code><br>
+      <code>};</code>
+    </pre>
+    </section>
+
+<h2>Всичко е израз (поне, доколкото е възможно)</h2>
+<p>Може би сте забелязали как въпреки че не добавяме изрази за връщане към функциите на CoffeeScript, те все
+   пак връщат крайната си стойност. Компилаторът на CoffeeScript се опитва да гарантира, че всички изрази на
+    езика могат да се използват като изрази.</p>
+    <br><br>
+    <p>Въпреки че функциите винаги ще връщат крайната си стойност, едновременно е възможно и се препоръчва да се върнете рано от тялото на функцията, изписвайки изрично връщането (върната стойност), когато знаете, че сте готови.
+<br><br>
+      Тъй като декларациите на променливи се появяват в горната част на обхвата, присвояването може да се използва в рамките на изрази, дори за променливи, които не са били виждани преди.</p>
+      <section class="theme"> <pre>
+        <code>six = (one = 1) + (two = 2) + (three = 3)</code>
+      </pre>
+    
+      <pre>
+        <code>var one, six, three, two;</code><br>
+        <code>six = (one = 1) + (two = 2) + (three = 3);</code>
+      </pre>
+    </section>
+     <p>Нещата, които иначе биха били изрази в JavaScript, когато се използват като част от израз в CoffeeScript, се преобразуват в изрази чрез обвиването им в затваряне. Това ви позволява да правите полезни неща, като присвояване на резултат от разбиране на променлива.</p>
+      
+      <h2>Лексикален обхват и безопасност на променливите</h2>
+      <p>Компилаторът на CoffeeScript се грижи да гарантира, че всички ваши променливи са правилно декларирани в лексикален обхват - никога не е необходимо да пишете var сами.</p>
+<section class="theme"><pre>
+  <code>outer = 1</code><br>
+  <code>changeNumbers = -&gt;</code><br>
+  <code>  inner = -1</code><br>
+  <code>  outer = 10</code><br>
+  <code>inner = changeNumbers()</code>
+</pre>
+<pre>
+  <code>var changeNumbers, inner, outer;</code><br>
+  <code>outer = 1;</code><br>
+  <code>changeNumbers = function() {</code><br>
+  <code>  var inner;</code><br>
+  <code>  inner = -1;</code><br>
+  <code>  return outer = 10;</code><br>
+  <code>};</code><br>
+  <code>inner = changeNumbers();</code>
+</pre>
+</section>
+<p>Забележете как всички декларации на променливи са избутани до върха на най-близкия обхват, когато се появяват за първи път. outer не се предекларира във вътрешната функция, защото вече е в обхват; inner във функцията, от друга страна, не трябва да може да променя стойността на външната променлива със същото име и следователно има собствена декларация.
+<br><br>
+  Тъй като нямате директен достъп до ключовата дума var, невъзможно е нарочно да засенчите външна променлива, можете само да се позовавате на нея. Така че внимавайте да не използвате повторно името на външна променлива случайно, ако пишете дълбоко вложена функция.
+  <br><br>
+  Въпреки че е потиснат в тази документация за яснота, целият изход на CoffeeScript (освен във файлове с инструкции за импортиране или експортиране) е обвит в анонимна функция: (function(){ … })();. Тази защитна обвивка, комбинирана с автоматичното генериране на ключовата дума var, прави изключително трудно замърсяването на глобалното пространство от имена случайно. (Обвивката за безопасност може да бъде деактивирана с голата опция и е ненужна и автоматично се деактивира при използване на модули.)
+  <br><br>
+  Ако искате да създадете променливи от най-високо ниво за използване от други скриптове, прикачете ги като свойства към прозореца; прикрепете ги като свойства към експортирания обект в CommonJS; или използвайте изявление за експортиране. Ако се насочвате както към CommonJS, така и към браузъра, екзистенциалният оператор (обхванат по-долу) ви дава надежден начин да разберете къде да ги добавите: експорти? това.
+  <br><br>
+  Тъй като CoffeeScript се грижи за всички декларации на променливи, не е възможно да се декларират променливи с let или const на ES2015. Това е умишлено; смятаме, че простотата, постигната от това, че не се налага да мислим за деклариране на променливи, надвишава ползата от наличието на три отделни начина за деклариране на променливи.</p>
+      <h2>Оператори и псевдоними</h2>
+      <p>Тъй като операторът == често причинява нежелана принуда, непреходен е и има различно значение от това в други езици, CoffeeScript компилира == в === и != в !==. Освен това is се компилира в === и isnt в !==.</p>
+      <p>Цялата информация за предефинираните оператори можем да обощим в следната таблица</p>
+      <table>
+        <thead>
+        <tr>
+        <th>CoffeeScript</th>
+        <th>JavaScript</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td><code>is</code></td>
+        <td><code>===</code></td>
+        </tr>
+        <tr>
+        <td><code>isnt</code></td>
+        <td><code>!==</code></td>
+        </tr>
+        <tr>
+        <td><code>not</code></td>
+        <td><code>!</code></td>
+        </tr>
+        <tr>
+        <td><code>and</code></td>
+        <td><code>&amp;&amp;</code></td>
+        </tr>
+        <tr>
+        <td><code>or</code></td>
+        <td><code>||</code></td>
+        </tr>
+        <tr>
+        <td><code>true</code>, <code>yes</code>, <code>on</code></td>
+        <td><code>true</code></td>
+        </tr>
+        <tr>
+        <td><code>false</code>, <code>no</code>, <code>off</code> </td>
+        <td><code>false</code></td>
+        </tr>
+        <tr>
+        <td><code>@</code>, <code>this</code></td>
+        <td><code>this</code></td>
+        </tr>
+        <tr>
+        <td><code>a in b</code></td>
+        <td><code>[].indexOf.call(b, a) &gt;= 0</code></td>
+        </tr>
+        <tr>
+        <td><code>a of b</code></td>
+        <td><code>a in b</code></td>
+        </tr>
+        <tr>
+        <td><code>for a from b</code></td>
+        <td><code>for (a of b)</code></td>
+        </tr>
+        <tr>
+        <td><code>a ** b</code></td>
+        <td><code>a ** b</code></td>
+        </tr>
+        <tr>
+        <td><code>a // b</code></td>
+        <td><code>Math.floor(a / b)</code></td>
+        </tr>
+        <tr>
+        <td><code>a %% b</code></td>
+        <td><code>(a % b + b) % b</code></td>
+        </tr>
+        </tbody>
+        </table>
+      <h2>Торта и тортени файлове</h2>
+      <p>CoffeeScript включва (много) проста система за изграждане, подобна на Make и Rake. Естествено, тя се нарича Cake и се използва за задачите, които изграждат и тестват самия език CoffeeScript. Задачите се дефинират във файл с име Cakefile и могат да бъдат извикани чрез стартиране на cake [task] от директорията. За да отпечатате списък с всички задачи и опции, просто напишете cake.</p>
+  <br><br>
+  <p>Дефинициите на задачите са написани на CoffeeScript, така че можете да поставите произволен код във вашия Cakefile. Дефинирайте задача с име, дълго описание и функцията, която да се извика, когато задачата се изпълнява. Ако задачата ви приема опция от командния ред, можете да дефинирате опцията с кратки и дълги флагове и тя ще бъде налична в обекта с опции. Ето задача, която използва Node.js API за възстановяване на парсера на CoffeeScript:</p>
+    
+<section class="theme">
+  <pre>
+    <code>fs = require 'fs'</code><br>
+    <code></code><br>
+    <code>option '-o', '--output [DIR]', 'directory for compiled code'</code><br>
+    <code></code><br>
+    <code>task 'build:parser', 'rebuild the Jison parser', (options) -&gt;</code><br>
+    <code>  require 'jison'</code><br>
+    <code>  code = require('./lib/grammar').parser.generate()</code><br>
+    <code>  dir  = options.output or 'lib'</code><br>
+    <code>  fs.writeFile "#{dir}/parser.js", code</code>
+  </pre>
+  <pre>
+  <code>var fs;</code><br>
+  <code>fs = require('fs');</code><br>
+  <code>option('-o', '--output [DIR]', 'directory for compiled code');</code><br>
+  <code></code><br>
+  <code>task('build:parser', 'rebuild the Jison parser', function(options) {</code><br>
+  <code>  var code, dir;</code><br>
+  <code>  require('jison');</code><br>
+  <code>  code = require('./lib/grammar').parser.generate();</code><br>
+  <code>  dir = options.output || 'lib';</code><br>
+  <code>  return fs.writeFile(`${dir}/parser.js`, code);</code><br>
+  <code>});</code>
+</pre>
+</section>
+<p>Ако трябва да извикате една задача преди друга — например стартиране на компилация преди тест, можете да използвате функцията за извикване: invoke 'build'. Задачите за торта са минимален начин да изложите функциите на CoffeeScript на командния ред, така че не очаквайте вградена фантазия. Ако имате нужда от зависимости или асинхронни обратни извиквания, най-добре е да ги поставите в самия код – не в задачата за торта.</p>
+      </section>
+        <section id="feature-four" class="feature-four">
+          <h1>Историята на CoffeeScript</h1>
+          <h2>Кой, кога и защо създава този език?</h2>
+          <p>
+            Първият Git комит има коментар „първоначален комит на мистериозния
+            език“. Първата стабилна версия на CoffeeScript е публикувана от
+            Джереми Ашкенас през 2010 г. Започва като малък страничен проект,
+            който бързо се развива. Дори Брендън Айх, създателят на JavaScript,
+            казва, че CoffeeScript е страхотна идея, която трябва да служи като
+            пример за бъдещето на JavaScript. <br />
+            <br />Днес CoffeeScript не е толкова популярен, колкото е бил преди
+            – но е успял да окаже огромно влияние върху JavaScript, TypeScript и
+            много от процесите за разработка на front-end, които все още
+            използваме днес. <br /><br />
+            Джереми Ашкенас смятал, че JavaScript има изключителни
+            характеристики и много за предлагане, и с няколко промени той може
+            да бъде подобрен. Той създава CoffeeScript, за да изведе отличните
+            характеристики на JavaScript на преден план и да скрие по-сложните и
+            объркващи функции, като добавя „синтактична захар“. Той също така
+            създава CoffeeScript така, че да може да се компилира в обикновен
+            JavaScript, което не било нова концепция, но CoffeeScript я прави
+            много по-известна.
+          </p>
+        </section>
+        <section id="feature-five" class="feature-five">
+          <h1>Кой е използвал CoffeeScript?</h1>
+          
+          <img
+            src="./img/Dropbox-logo-no-bg.png"
+            alt="Dropbox Logo"
+          />
+          <p>
+            Една от най-големите компании, които използват CoffeeScript, е
+            Dropbox. Те пренаписват целия си front-end код с помощта на
+            CoffeeScript за една седмица през 2012 г. Те вярват, че това
+            коригира много от проблемите със синтаксиса в JavaScript. JavaScript
+            се развивава твърде бавно и CoffeeScript добавя много полезни
+            функции.
+          </p>
+          <br /><img src="./img/atom-logo.png" alt="Atom logo" />
+          <p>
+            Atom е популярен текстов редактор, разработен от GitHub. Той е
+            изграден върху Electron и използва CoffeeScript за основната си
+            функционалност. Използването на CoffeeScript позволява на Atom да
+            осигури по-удобно изживяване чрез опростяване на сложния JavaScript
+            код.
+          </p>
+          <br /><img src="./img/docpad-logo.png" alt="Docpad logo" />
+          <p>
+            DocPad е статичен генератор на сайтове, който позволява на
+            разработчиците да генерират HTML уебсайтове, използвайки различни
+            езици за програмиране. Той използва CoffeeScript за основната си
+            функционалност, включително изграждане и обработка на файлове на
+            уебсайтове.
+          </p>
+        </section>
+        <section id="feature-six" class="feature-six">
+      <h1>Как да инсталираме CoffeeScript?</h1>
+      <p>
+        Версията на кафето от командния ред е достъпна като помощна програма
+        Node.js, изискваща Node 6 или по-нова версия. Основният компилатор обаче
+        не зависи от Node и може да се изпълнява във всяка JavaScript среда или
+        в браузъра. За да инсталирате, първо се уверете, че имате работещо копие
+        на най-новата стабилна версия на Node.js. След това можете да
+        инсталирате CoffeeScript глобално с npm:
+      </p>
+      <pre>npm install --global coffeescript</pre>
+        <p>Това ще направи командите за <pre class="coffee"><code>coffee</code></pre> и <pre class="cake"><code>cake</code></pre>достъпни глобално.
+          Ако използвате CoffeeScript в проект, трябва да го инсталирате локално за този проект,
+          така че версията на CoffeeScript да се проследява като една от зависимостите на вашия проект. 
+          В папката на този проект: <pre>npm install --save-dev coffeescript</pre>
+          Командите за <pre class="coffee"><code>coffee</code></pre> и <pre class="cake"><code>cake</code></pre>първо ще потърсят в текущата папка, за да видят дали CoffeeScript е инсталиран локално и ще използват тази версия, ако е така. Това позволява различни версии на CoffeeScript да бъдат инсталирани глобално и локално.</p>
+      </section>
+        <section id="feature-seven" class="featutre-seven">
+          <h1>Има ли недостатъци?</h1>
+          <h3>
+            Макар и да звучи толкова изкушаващ, че да забравим за JavaScript и
+            да преминем изцяло на CoffeeScript, то той има и своите минуси
+          </h3>
+          <br>
+          <ul>
+            <li>
+              Основният недостатък на CoffeeScript е концепцията за интервали;
+              тъй като се използва от повечето езици за програмиране, вариращи
+              от python, ruby, YAML и много други, където отстъпът играе ключова
+              роля; по този начин, ако бъде пропусната правилна дефиниция на
+              параметър или линия, тогава в този случай това може да създаде
+              някакъв проблем или грешки по време на внедряването.
+            </li>
+            <li>
+              Появата на ES6 през 2015 г. направи навлизането в областта на уеб
+              разработката с много функции, даващи силна конкуренция на
+              CoffeeScript, като по този начин направи появата и съществуването
+              на такъв език в изчезване и след това в по-късните фази, когато
+              JavaScript се разви, той подчерта много ограничения за
+              CoffeeScript, които са почти на ръба на края.
+            </li>
+          </ul>
+        </section>
+        <section id="feature-eight" class="feature-eight">
+          <h1>Източници</h1>
+          <p id="link1">[1] CoffeeScript официален сайт, линк: [ <a href="https://coffeescript.org/" target="_blank">https://coffeescript.org/</a> ] </p>
+          <p id="link1">[2] Кратка история на CoffeeScript, линк: [ <a href="https://objectcomputing.com/resources/publications/sett/november-2011-coffeescript-a-little-language-that-compiles-into-javascript" target="_blank">https://objectcomputing.com/resources/publications/sett/november-2011-coffeescript-a-little-language-that-compiles-into-javascript</a> ] </p>
+          <p id="link1">[3] Какво е CofeeScript, линк: [ <a href="https://www.codecademy.com/resources/blog/what-is-coffeescript/" target="_blank">https://www.codecademy.com/resources/blog/what-is-coffeescript/</a> ] </p>
+          <p id="link1">[4] CSS анимация на кафе, линк: [ <a href="https://codepen.io/LauraAddams/pen/OpOjxB" target="_blank">https://codepen.io/LauraAddams/pen/OpOjxB</a> ] </p>
+        </section>
+      </section>
+    </section>
+
+    </section>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+
+              document.querySelector(this.getAttribute('href')).scrollIntoView({
+                  behavior: 'smooth'
+              });
+          });
+      });
+    </script><script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+
+              document.querySelector(this.getAttribute('href')).scrollIntoView({
+                  behavior: 'smooth'
+              });
+          });
+      });
+    </script>
+  </body>
+</html>
