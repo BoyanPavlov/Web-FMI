@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Валидация на форма</title>
+</head>
+
+<body>
+    <h1>Форма за въвеждане на учебни предмети</h1>
+    <form action="validate.php" method="POST">
+        <label for="name">Име на учебен предмет:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="teacher">Име на преподавател:</label><br>
+        <input type="text" id="teacher" name="teacher" required><br><br>
+
+        <label for="description">Описание:</label><br>
+        <textarea id="description" name="description" required></textarea><br><br>
+
+        <label for="group">Група:</label><br>
+        <select id="group" name="group" required>
+            <option value="М">М</option>
+            <option value="ПМ">ПМ</option>
+            <option value="ОКН">ОКН</option>
+            <option value="ЯКН">ЯКН</option>
+        </select><br><br>
+
+        <label for="credits">Кредити:</label><br>
+        <input type="number" id="credits" name="credits" min="1" required><br><br>
+
+        <button type="submit">Изпрати</button>
+    </form>
+</body>
+
+</html>
